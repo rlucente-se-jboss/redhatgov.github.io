@@ -1,0 +1,64 @@
+---
+title: Lab 1 - Welcome
+workshops: rhel_for_edge
+workshop_weight: 11
+layout: lab
+---
+
+:domain_name: rhnaps.io
+:icons: font
+:imagesdir: /workshops/rhel_for_edge/images
+
+
+= Lab 1 - Welcome!
+
+
+== Exercise Description
+
+Welcome to RHEL for Edge!
+
+This lab provides a quick tour of the console to help you get
+familiar with the user interface along with some key terminology
+we will use in subsequent lab content.
+
+== Key Terms
+We will be using the following terms throughout the workshop labs
+so here are some basic definitions you should be familiar with.
+You'll learn more terms along the way, but these are the basics to
+get you started.
+
+- Blueprint - Defines customized system images by listing packages and customizations.
+- Compose - Individual builds of a system image, based on a particular version of a particular blueprint.
+- Container - Your software wrapped in a complete filesystem containing everything it needs to run.
+- Greenboot - Custom health checks at system startup that, in the event of an issue, rolls back the changes to the last working state.
+- Image - An rpm-ostree image that includes system packages to remotely install RHEL on Edge servers.
+- Kickstart - Allows you to execute unattended operating system installations.
+- OSTree - An upgrade system for Linux-based operating systems that performs atomic upgrades of complete filesystem trees.
+- Podman - A tool for managing containers and images, volumes mounted into those containers, and pods made from groups of containers.
+- Registry - Web application for storing and distributing OCI container images.
+- Repository - Collection of related OCI container images, usually providing different versions of the same application or service.
+- Systemd - Comprehensive tool to start a Linux system, manage service lifecycle, and implement sockets and timers to trigger services.
+- Web console - Web-based interface for managing and monitoring your local system and Linux servers located in your network environment.
+
+== Accessing RHEL for Edge Tooling
+RHEL for Edge tooling can be accessed via command line tooling and also via the RHEL web console.
+
+=== Let's Login to the Web Console
+Use your browser to navigate to the URI provided by your instructor and login with the user/password provided.
+
+```bash
+{{< urifqdn "https://" "node" ":9090" >}}
+```
+
+You will be presented with a login window. Once there, please log in, using the credentials below:
+
+|===
+|User name|ec2-user
+|Password|*<provided by your instructor>*
+|Reuse my password for privileged tasks|*checked*
+|===
+
+<img src="images/web-console-login.png" width="500"><br/>
+*Web Console Login*
+
+{{< importPartial "footer/footer.html" >}}

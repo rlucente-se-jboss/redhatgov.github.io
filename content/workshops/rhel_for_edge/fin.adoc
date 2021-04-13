@@ -1,0 +1,29 @@
+---
+title: Fin.
+workshops: rhel_for_edge
+workshop_weight: 20
+layout: lab
+---
+
+:domain_name: rhnaps.io
+:icons: font
+:imagesdir: /workshops/rhel_for_edge/images
+
+= That's it!
+These labs provided you some idea of how RHEL for Edge simplifies
+the lifecycle of both an atomic operating system and the applications
+it hosts. You should have a deeper understanding of the various
+components that work together to build, deploy, and update the
+operating system. Additionally, you should now understand how podman
+combined with systemd can run container applications on lightweight
+infrastructure. Please feel free to continue to "kick the tires"
+in the demo environment we've setup and explore both the web console
+and the `composer-cli` command line tooling.
+
+- [Composing a Customized RHEL System Image][1]
+- [Composing, Installing, and Managing RHEL for Edge Images][2]
+
+[1]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/composing_a_customized_rhel_system_image/index
+[2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/composing_installing_and_managing_rhel_for_edge_images/index
+
+{{< importPartial "footer/footer.html" >}}

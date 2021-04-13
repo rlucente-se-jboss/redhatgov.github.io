@@ -1,0 +1,76 @@
+---
+title: Red Hat Enterprise Linux for Edge
+menu:
+  main:
+    parent: workshops
+    pre: fa fa-magic
+---
+
+:domain_name: rhnaps.io
+:workshop_prefix: edgeworkshop
+:tower_url: https://{workshop_prefix}.*student_number*.{domain_name}
+:ssh_url: https://{workshop_prefix}.*student_number*.{domain_name}:9090
+
+:icons: font
+:iconsdir: http://people.redhat.com/~jduncan/images/icons
+:imagesdir: /workshops/rhel_for_edge/images
+
+= Red Hat Enterprise Linux for Edge Workshop
+
+== Workshop Description
+This workshop will have you creating RHEL for Edge OSTree-based
+operating system images, deploying those images to a simulated edge
+device, deploying and updating a container web application on the
+edge device, and finally, performing automated atomic upgrades and
+rollbacks of the operating system.
+
+== Who should attend
+
+-   Architects
+-   Developers
+-   Technical Leads
+-   Operations Engineers
+
+
+== What you will learn
+
+- Defining and managing operating system image blueprints
+- Using CLI tools to build and inspect an operating system image
+- Using the RHEL web console to build and inspect an operating system image
+- Configuring and installing an OSTree-based edge device
+- Automatically restarting container applications and keeping them up to date
+- Updating the operating system atomically with automated rollbacks on failure
+
+== Overview
+Welcome to the workshop! This particular workshop will give you
+hands-on experience working with OSTree-based atomic operating
+system images and deployements. You'll explore how RHEL for Edge
+simplifies the installation and maintenance of an atomic operating
+system and how systemd combined with podman simplifies the lifecycle
+of applications at the edge.
+
+If you are on-site with us, the instructor will walk you through
+and kick off each lab.  Otherwise, if you're running this on your
+own, just go through the list of labs below in order (as some build
+off of each other).
+
+== Your Responsibilities
+
+Have a Discussion. This will be boring if it’s just us, up here talking for over 4 hours.
+
+Participate. We are going to cut you loose with RHEL, in just a little while. Have questions. Have opinions.
+
+Hopefully you have your laptop with you. If not, please find a shoulder-surfing buddy. See? Not only can we dig into RHEL, but you can make a new friend!
+
+
+== Exercises
+
+{{< labs rhel_for_edge >}}
+
+<br>
+
+{{% alert info %}}
+These labs have been tailored for RHEL 8.3.1 and later
+{{% /alert %}}
+
+{{< importPartial "footer/footer.html" >}}
